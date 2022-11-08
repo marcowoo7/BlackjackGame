@@ -114,26 +114,4 @@ public class Blackjack{
         playerHand.add(cardDealt);
     }
 
-    public static boolean game(){
-        Random r = new Random();
-        int total = 0;
-        while(total <= 17){
-            int num = r.nextInt(10)+1;
-            total += num;
-            System.out.print(num + " ");
-        }
-        System.out.println(" = " + total);
-        if(total > 21){
-            System.out.println("Lose");
-            return false;
-        }
-        else if(total == 21){
-            System.out.println("Blackjack!");
-            return true;
-        }
-        else{
-            System.out.println("Win");
-            return true;
-        }
-    }
 }
